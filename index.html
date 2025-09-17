@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team P.A.W.S. - Prevention, Awareness, Wielding Strategies for Safety</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div><i class="fa-solid fa-envelope"></i> teampaws25@gmail.com | <i class="fa-solid fa-phone"></i> 09186818282</div>
+                <div><i class="fa-solid fa-hospital"></i> Emergency? Seek Medical Attention Immediately!</div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <div class="logo-icon">🐾</div>
+                        <div class="logo-text">
+                            <h1>Team P.A.W.S.</h1>
+                            <p>Prevention, Awareness, Wielding Strategies for Safety</p>
+                        </div>
+                    </div>
+                    <div class="main-nav" id="mainNav">
+                        <ul>
+                            <li><a href="#" onclick="showSection('home')" class="active">Home</a></li>
+                            <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                            <li><a href="#" onclick="showSection('prevention')">Rabies Prevention</a></li>
+                            <li><a href="#" onclick="showSection('bite-awareness')">Animal Bite Awareness</a></li>
+                            <li><a href="#" onclick="showSection('faq')">FAQs</a></li>
+                            <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+                            <li><a href="#" onclick="showSection('legal')">Legal & Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="home" class="page-section active">
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Welcome to Team P.A.W.S.</h1>
+                    <p class="hero-subtitle">Prevention, Awareness, Wielding Strategies for Safety</p>
+                    <p>Project P.A.W.S. is a community-based educational campaign aimed at enhancing the level of awareness and knowledge of the community in Barangay Cobangbang about rabies by sharing accurate and important information.</p>
+                    <div>
+                        <button class="btn" onclick="showSection('prevention')">Learn Prevention</button>
+                        <button class="btn btn-secondary" onclick="showSection('bite-awareness')">Bite Awareness</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section style="padding: 80px 0; background: #f8f9fa;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Rabies Prevention and Animal Bite Awareness Matter</h2>
+                    <p class="section-subtitle">Rabies affects both animals and humans, and animal bites can lead to serious health problems. Educating people is the first step in preventing these risks.</p>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <span class="card-icon"><i class="fa-solid fa-shield-virus"></i></span>
+                        <h3>Prevention First</h3>
+                        <p>Learn how to protect yourself, your family, and your pets from rabies through proper vaccination and awareness of risk factors in your community.</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="card-icon"><i class="fa-solid fa-bandage"></i></span>
+                        <h3>Bite Response</h3>
+                        <p>Know the immediate steps to take if you or someone else is bitten by an animal, including proper wound care and when to seek medical attention.</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="card-icon"><i class="fa-solid fa-handshake"></i></span>
+                        <h3>Community Action</h3>
+                        <p>Join our mission to create a safer Barangay Cobangbang through education, awareness, and community involvement in rabies prevention efforts.</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 60px; padding: 40px; background: white; border-radius: 15px;">
+                    <h3 style="color: #2c5aa0; font-size: 28px; margin-bottom: 20px;">Get Involved!</h3>
+                    <p style="font-size: 18px; line-height: 1.7; color: #666;">Want to learn more or help out? Check out how you can get involved, whether it's by volunteering, or simply sharing information with your community.</p>
+                    <button class="btn" onclick="showSection('contact')" style="margin-top: 20px;">Contact Us Today</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="about" class="page-section">
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Team P.A.W.S.</h2>
+                    <p class="section-subtitle">Dedicated to protecting our community through education and awareness</p>
+                </div>
+
+                <div class="mission-highlight">
+                    <h3 style="color: #2c5aa0; font-size: 28px; margin-bottom: 20px; text-align: center;">Our Mission</h3>
+                    <p style="font-size: 20px; line-height: 1.8; color: #555; text-align: center;">To improve the level of awareness of the community in Barangay Cobangbang, Daet, Camarines Norte through education and the dissemination of informative materials.</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our Community Focus</h3>
+                        <p>Team P.A.W.S. was created specifically to address the needs of our community in Barangay Cobangbang, Daet, Camarines Norte. We understand that effective health education must be tailored to local conditions and needs.</p>
+                        <p>Through our educational campaign, we work to ensure that every member of our community has access to accurate, up-to-date information about rabies prevention and animal bite safety.</p>
+                        <p>We believe that an informed community is a protected community, and our goal is to empower residents with the knowledge they need to keep themselves and their families safe.</p>
+                    </div>
+                    <div class="about-image"></div>
+                </div>
+
+                <div class="about-content">
+                    <div style="background: url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=500&h=400&fit=crop') center/cover; height: 400px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);"></div>
+                    <div class="about-text">
+                        <h3>Educational Approach</h3>
+                        <p>Our educational materials are designed to be accessible, practical, and relevant to daily life in our community. We focus on clear, actionable information that residents can immediately apply.</p>
+                        <p>By combining traditional health education methods with community engagement, we ensure that our message reaches all segments of the population, from children to adults.</p>
+                        <p>We work closely with local health authorities, schools, and community leaders to maximize the impact of our educational efforts and create lasting change.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="prevention" class="page-section">
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Rabies Prevention</h2>
+                    <p class="section-subtitle">Understanding rabies and how to protect yourself and your community</p>
+                </div>
+
+                <div class="prevention-grid">
+                    <div class="prevention-card">
+                        <h4>What is Rabies?</h4>
+                        <p>Rabies is a deadly disease that can affect the brain and nervous system. Early symptoms include fever and headache, and as the disease progresses, it can cause confusion, paralysis, and even death.</p>
+                    </div>
+                    <div class="prevention-card">
+                        <h4>How Rabies is Spread</h4>
+                        <p>Rabies is mainly spread through the saliva of infected animals, often through bites. The animals most likely to carry rabies are dogs, bats, raccoons, and other wild animals.</p>
+                    </div>
+                    <div class="prevention-card">
+                        <h4>How to Protect Yourself</h4>
+                        <p>Vaccination is the best way to protect yourself and your pets from rabies. Make sure your pets get their rabies shots on time, and avoid interacting with wild animals.</p>
+                    </div>
+                </div>
+
+                <div class="prevention-steps">
+                    <h4><i class="fa-solid fa-triangle-exclamation"></i> If You're Bitten</h4>
+                    <ol>
+                        <li><strong>Wash the wound</strong> with soap and water immediately</li>
+                        <li><strong>Go to a doctor right away</strong> - don't wait for symptoms</li>
+                        <li><strong>You may need a rabies shot</strong> - treatment must start quickly</li>
+                        <li><strong>Report the incident</strong> to local health authorities</li>
+                        <li><strong>Follow all medical advice</strong> for post-exposure treatment</li>
+                    </ol>
+                </div>
+
+                <div style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-top: 40px;">
+                    <h3 style="color: #2c5aa0; font-size: 24px; margin-bottom: 20px; text-align: center;">Prevention is Key</h3>
+                    <p style="font-size: 18px; line-height: 1.7; color: #666; text-align: center;">Remember: Rabies is almost always fatal once symptoms appear, but it is completely preventable with proper vaccination and timely medical treatment after exposure. The key is to act quickly and seek medical attention immediately after any animal bite.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="bite-awareness" class="page-section">
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Animal Bite Awareness</h2>
+                    <p class="section-subtitle">Know how to respond to animal bites and prevent them from happening</p>
+                </div>
+
+                <div style="margin-bottom: 50px;">
+                    <h3 style="color: #2c5aa0; font-size: 24px; margin-bottom: 20px;">Different Types of Animal Bites</h3>
+                    <p style="font-size: 18px; line-height: 1.7; color: #666; margin-bottom: 30px;">Animal bites can come from pets like dogs and cats or wild animals like raccoons and bats. Some animals carry more risk, so it's important to know which ones to be cautious around.</p>
+                    
+                    <div class="bite-types">
+                        <div class="bite-type-card">
+                            <h4><i class="fa-solid fa-paw"></i> Domestic Animals</h4>
+                            <p>Dogs and cats are common sources of bites. Even vaccinated pets can cause injury, so proper handling and training are essential.</p>
+                        </div>
+                        <div class="bite-type-card">
+                            <h4><i class="fa-solid fa-spider"></i> Wild Animals</h4>
+                            <p>Bats, raccoons, and other wild animals pose higher rabies risks. Never attempt to handle wild animals, even if they appear friendly.</p>
+                        </div>
+                        <div class="bite-type-card">
+                            <h4><i class="fa-solid fa-cat"></i> Stray Animals</h4>
+                            <p>Unvaccinated strays present significant risks. Contact animal control rather than approaching stray animals yourself.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="first-aid-steps">
+                    <h4>🩹 First Aid for Animal Bites</h4>
+                    <ul>
+                        <li><strong>Clean the bite with soap and water</strong> - Wash thoroughly for at least 15 minutes</li>
+                        <li><strong>Apply pressure to stop any bleeding</strong> - Use a clean cloth or bandage</li>
+                        <li><strong>Use an antiseptic and cover the bite with a clean bandage</strong></li>
+                        <li><strong>See a doctor, especially if the animal that bit you was acting strange or is wild</strong></li>
+                        <li><strong>Document everything</strong> - Record details about the animal and incident</li>
+                    </ul>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 40px 0;">
+                    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #f39c12;">
+                        <h4 style="color: #f39c12; font-size: 20px; margin-bottom: 15px;">📞 Reporting Animal Bites</h4>
+                        <p style="color: #666; line-height: 1.7;">If you get bitten, report it to local authorities or animal control. They may need to quarantine the animal to check for rabies, and they can help you with next steps.</p>
+                    </div>
+                    <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 4px solid #27ae60;">
+                        <h4 style="color: #27ae60; font-size: 20px; margin-bottom: 15px;">🛡️ Preventing Animal Bites</h4>
+                        <p style="color: #666; line-height: 1.7;">Train pets to be well-behaved and always supervise kids around animals. Teach children to approach animals carefully, and avoid contact with wild animals whenever possible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="faq" class="page-section">
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Common questions about rabies prevention and animal bite response</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-category">
+                        <h3>General Questions</h3>
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>What should I do if I'm bitten by an animal?</span>
+                                <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Wash the wound right away with soap and water, apply pressure to stop bleeding, and get medical help as soon as possible. Don't wait for symptoms to appear - seek immediate medical attention.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>How do I know if an animal has rabies?</span>
+                                <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Rabid animals may act strange, like being unusually aggressive or acting disoriented. If you're unsure, seek help from a professional. Never approach an animal that is acting abnormally.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-category">
+                        <h3>Rabies Vaccination</h3>
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>How effective are rabies vaccines?</span>
+                                <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Rabies vaccines are very effective if given before or shortly after exposure to the virus. The vaccine is nearly 100% effective when administered properly and on schedule.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>Do all animals need rabies vaccines?</span>
+                                <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! All dogs and cats should be vaccinated against rabies, and other pets may need it too depending on where you live. Check with your veterinarian about vaccination schedules.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-category">
+                        <h3>Animal Bite Treatment</h3>
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>What should I do after a dog bite?</span>
+                                <span>+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Follow the same first-aid steps: clean the wound, stop the bleeding, and get medical care. Rabies shots might be necessary, especially if the dog's rabies status is unclear. Always report the incident to local authorities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact" class="page-section">
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Team P.A.W.S.</h2>
+                    <p class="section-subtitle">Get in touch with us for information, support, or to get involved in our community efforts</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>teampaws25@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>09186818282</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Daet, Camarines Norte</p>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 30px;">
+                            <h4 style="color: #2c5aa0; margin-bottom: 15px;">Follow Us</h4>
+                            <p style="margin-bottom: 15px;">Stay updated by following us on social media:</p>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/people/Team-PAWS/61580154209747/" target="_blank">📘</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Have a Question?</h3>
+                        <p style="margin-bottom: 30px; color: #666;">Use our inquiry form to send any questions or comments.</p>
+                        
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required placeholder="Please share your questions or comments..."></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Legal & Privacy Section -->
+    <div id="legal" class="page-section">
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Legal Disclaimer & Privacy Policy</h2>
+                </div>
+
+                <div class="legal-content">
+                    <h3>Privacy Policy</h3>
+                    <p>We care about your privacy and want to let you know how we handle your personal information.</p>
+                    <p>Team P.A.W.S. is committed to protecting the privacy of visitors to our website and participants in our educational programs. We collect only the information necessary to provide our services and communicate with our community.</p>
+                    <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy. We may share information with trusted partners who assist us in operating our website and conducting our educational activities.</p>
+                    <p>Any personal information you provide through our contact forms or other communications is used solely for the purpose of responding to your inquiries and providing relevant information about our programs.</p>
+
+                    <h3>Terms of Use</h3>
+                    <p>By accessing and using this website, you agree to comply with these terms and conditions.</p>
+                    <p>The information provided on this website is for educational purposes only and should not be considered a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of qualified healthcare providers regarding any health concerns or medical conditions.</p>
+                    <p>While we strive to provide accurate and up-to-date information, Team P.A.W.S. makes no warranties or representations regarding the accuracy, completeness, or reliability of the information presented.</p>
+
+                    <h3>Medical Disclaimer</h3>
+                    <p>The educational materials and information provided by Team P.A.W.S. are intended for general informational purposes only. This information is not intended to diagnose, treat, cure, or prevent any disease.</p>
+                    <p>In case of animal bites or potential rabies exposure, always seek immediate medical attention from qualified healthcare professionals. Do not rely solely on the information provided on this website for medical decisions.</p>
+                    <p>Emergency situations require immediate professional medical intervention. Contact your local emergency services or healthcare provider without delay if you have been bitten by an animal or suspect rabies exposure.</p>
+
+                    <h3>Contact for Legal Matters</h3>
+                    <p>If you have any questions about this Privacy Policy or Terms of Use, please contact us at teampaws25@gmail.com.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Team P.A.W.S.</h4>
+                    <p>Prevention, Awareness, Wielding Strategies for Safety</p>
+                    <p>Serving Barangay Cobangbang, Daet, Camarines Norte with comprehensive rabies prevention education and community outreach.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="#" onclick="showSection('about')">About Us</a></p>
+                    <p><a href="#" onclick="showSection('prevention')">Rabies Prevention</a></p>
+                    <p><a href="#" onclick="showSection('bite-awareness')">Bite Awareness</a></p>
+                    <p><a href="#" onclick="showSection('faq')">FAQs</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fa-solid fa-envelope"></i> teampaws25@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09186818282</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Daet, Camarines Norte</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/people/Team-PAWS/61580154209747/" target="_blank">📘</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency</h4>
+                    <p style="color: #ffeb3b; font-weight: bold;"><i class="fa-solid fa-hospital"></i> Animal Bite Emergency</p>
+                    <p>Seek immediate medical attention at the nearest hospital or health center.</p>
+                    <p>Contact local health authorities to report the incident.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Team P.A.W.S. All rights reserved. | Educational content for Barangay Cobangbang, Daet, Camarines Norte</p>
+                <p style="font-size: 14px; margin-top: 10px;">This website provides educational information only. Always consult healthcare professionals for medical advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
