@@ -82,3 +82,106 @@ Privacy Policy
 We care about your privacy and want to let you know how we handle your personal information.
 
 Terms of Use
+
+
+
+
+<style>
+.carousel-section {
+  width: 100%;
+  max-width: 900px; /* adjust for your 871px images */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-prev,
+.carousel-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  padding: 8px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  user-select: none;
+}
+
+.carousel-prev { left: 20px; }
+.carousel-next { right: 20px; }
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-dots .dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+  background-color: #333;
+}
+</style>
+
+<script>
+let slideIndex = 1;
+showSlide(slideIndex);
+
+function moveSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlide(slideIndex = n);
+}
+
+function showSlide(n) {
+  let slides = document.getElementsByClassName("carousel-slide");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    slides[i].classList.remove("active");
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].classList.add("active");
+  dots[slideIndex-1].classList.add("active");
+}
+
+// Auto play (optional)
+setInterval(() => moveSlide(1), 5000); // 5 seconds
+</script>

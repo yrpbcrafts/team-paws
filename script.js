@@ -104,3 +104,37 @@ window.addEventListener("resize", function () {
     document.getElementById("mainNav").classList.remove("open");
   }
 });
+
+let slideIndex = 1;
+showSlide(slideIndex);
+
+function moveSlide(n) {
+  showSlide(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlide(slideIndex = n);
+}
+
+function showSlide(n) {
+  let slides = document.getElementsByClassName("carousel-slide");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    slides[i].classList.remove("active");
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].classList.add("active");
+  dots[slideIndex-1].classList.add("active");
+}
+
+// Auto play (optional)
+setInterval(() => moveSlide(1), 10000);
